@@ -3,3 +3,6 @@ saida/
 *.wav
 # scripts de vídeo e logo: ficam só no PC (repositório público)
 prova-de-conceito/
+
+# gerador de vídeo: repositório git próprio, só local (privado)
+gerador/
