@@ -1,0 +1,5 @@
+__pycache__/
+saida/
+*.wav
+# scripts de vídeo e logo: ficam só no PC (repositório público)
+prova-de-conceito/
