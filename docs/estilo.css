@@ -215,3 +215,13 @@ h1 {
   .cartao { animation: none; transition: none; }
   .cartao:hover { transform: none; }
 }
+
+/* Página de texto (privacidade) */
+.texto-legal { max-width: 720px; padding-top: 32px; }
+.texto-legal h1 { font-size: clamp(2rem, 6vw, 2.8rem); margin-bottom: 20px; }
+.texto-legal h2 { margin: 36px 0 10px; font-size: 1.25rem; letter-spacing: -.01em; }
+.texto-legal p, .texto-legal li { color: var(--suave); font-size: 1rem; }
+.texto-legal b { color: var(--tinta); }
+.texto-legal ul { padding-left: 20px; }
+.texto-legal li { margin-bottom: 8px; }
+.texto-legal a, .rodape a { color: var(--tinta); font-weight: 600; }
