@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Garimpo Útil · os achados dos nossos vídeos</title>
-  <meta name="description" content="Viu um produto nos vídeos do Garimpo Útil? Digite o número do vídeo e encontre o link.">
+  <meta name="description" content="Viu um produto nos vídeos do Garimpo Útil? Procure pelo nome e encontre o link.">
   <meta name="theme-color" content="#FAFAF7" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#0E1320" media="(prefers-color-scheme: dark)">
   <meta property="og:title" content="Garimpo Útil">
@@ -29,13 +29,13 @@
     <section class="abertura">
       <p class="sobretitulo">Os achados dos nossos vídeos</p>
       <h1>Viu no vídeo?<br>O link está aqui.</h1>
-      <p class="apoio">Digite o número que aparece no vídeo ou procure pelo nome do produto.</p>
+      <p class="apoio">Procure pelo nome do produto ou navegue pelas categorias.</p>
 
       <label class="busca">
         <span class="sr">Buscar produto</span>
         <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg>
         <input id="busca" type="search" inputmode="search" autocomplete="off"
-               placeholder="Nº do vídeo ou produto">
+               placeholder="Buscar pelo nome do produto">
       </label>
     </section>
 
@@ -46,7 +46,7 @@
 
     <div class="vazio" id="vazio" hidden>
       <p class="vazio-titulo">Nenhum achado por aqui.</p>
-      <p>Confira o número no vídeo ou limpe a busca.</p>
+      <p>Tente outro nome ou veja todas as categorias.</p>
       <button type="button" id="limpar">Ver todos os produtos</button>
     </div>
   </main>

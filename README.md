@@ -1,6 +1,6 @@
 # Garimpo Útil
 
-Página de links dos vídeos do Garimpo Útil (TikTok e Instagram): quem viu um produto no vídeo digita o número e chega ao link.
+Página de links dos vídeos do Garimpo Útil (TikTok e Instagram): quem viu um produto no vídeo procura pelo nome ou pela categoria e chega ao link.
 
 Publicada pelo GitHub Pages a partir da pasta `docs/`.
 
@@ -8,12 +8,12 @@ Publicada pelo GitHub Pages a partir da pasta `docs/`.
 
 - `docs/`: o site. É estático (HTML, CSS e JS puro, sem build).
   - `produtos.js`: **o catálogo**. É o único arquivo que muda quando entra um produto novo.
-  - `img/produtos/`: a foto de cada produto, com o nome igual ao número (`001.jpg`).
+  - `img/produtos/`: a foto de cada produto, com o nome igual ao `id` (`001.jpg`).
 
 ## Adicionar um produto
 
 1. Salvar a foto em `docs/img/produtos/NNN.jpg` (quadrada, 800 px).
-2. Acrescentar a entrada em `docs/produtos.js`, com o `id` igual ao número que aparece no vídeo e o **link de afiliado** (nunca o link comum da loja).
+2. Acrescentar a entrada em `docs/produtos.js`, com um `id` novo (interno: define a ordem e o nome da foto, não aparece no site) e o **link de afiliado** (nunca o link comum da loja).
 
 ## Ver no PC
 
@@ -21,7 +21,7 @@ Publicada pelo GitHub Pages a partir da pasta `docs/`.
 python -m http.server 8095 --directory docs
 ```
 
-Depois abrir http://localhost:8095. Para testar o link direto de um produto: http://localhost:8095/?p=1
+Depois abrir http://localhost:8095.
 
 ## Regras
 

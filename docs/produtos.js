@@ -1,4 +1,4 @@
-// Catálogo do site. Cada produto tem o número que aparece no vídeo (id).
+// Catálogo do site. id: identificador interno (ordem de entrada e nome da foto), não aparece no site.
 // loja: "amazon" | "shopee" | "mercadolivre". link: o link de AFILIADO, nunca o link comum.
 window.PRODUTOS = [
   {

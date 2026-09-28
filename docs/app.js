@@ -1,19 +1,16 @@
 const LOJAS = { amazon: "Amazon", shopee: "Shopee", mercadolivre: "Mercado Livre" };
 
-const produtos = [...(window.PRODUTOS || [])].sort((a, b) => b.id - a.id); // mais novo primeiro
+const produtos = [...(window.PRODUTOS || [])].sort((a, b) => b.id - a.id); // mais novo primeiro (id é só interno)
 const $ = (id) => document.getElementById(id);
 const estado = { busca: "", categoria: "Todos" };
 
 const semAcento = (t) => t.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
-const numero = (id) => "#" + String(id).padStart(3, "0");
 
 function filtrar() {
-  const q = estado.busca.trim().replace(/^#/, "");
+  const q = semAcento(estado.busca.trim());
   return produtos.filter((p) => {
-    if (/^\d+$/.test(q)) return p.id === Number(q); // número do vídeo: exato, ignora a categoria
     if (estado.categoria !== "Todos" && p.categoria !== estado.categoria) return false;
-    if (!q) return true;
-    return semAcento(`${p.nome} ${p.destaque} ${p.categoria}`).includes(semAcento(q));
+    return !q || semAcento(p.nome).includes(q); // a busca olha só o nome do produto
   });
 }
 
@@ -33,7 +30,6 @@ function cartao(p, i) {
       style="animation-delay:${Math.min(i, 12) * 40}ms">
     <figure>
       <img src="${p.imagem}" alt="" width="800" height="800" loading="lazy">
-      <span class="numero">${numero(p.id)}</span>
     </figure>
     <div class="corpo">
       <span class="loja">${loja}</span>
@@ -63,10 +59,6 @@ $("filtros").addEventListener("click", (e) => {
 $("limpar").addEventListener("click", () => {
   estado.busca = ""; estado.categoria = "Todos"; $("busca").value = ""; desenhar();
 });
-
-// Link direto para um produto: ?p=12 (ex.: figurinha de link nos stories)
-const p = new URLSearchParams(location.search).get("p");
-if (p) { estado.busca = p; $("busca").value = p; }
 
 $("aviso-amazon").hidden = !produtos.some((x) => x.loja === "amazon");
 $("ano").textContent = new Date().getFullYear();
