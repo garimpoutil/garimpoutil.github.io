@@ -41,5 +41,65 @@ window.PRODUTOS = [
     "link": "https://link.amazon/B0aKZqa4g",
     "imagem": "img/produtos/004.jpg",
     "adicionado": "2026-09-28"
+  },
+  {
+    "id": 5,
+    "nome": "Restaurador de plástico automotivo Restaurax 240 ml",
+    "destaque": "Vem com esponja e luvas, para plásticos do carro",
+    "categoria": "Automotivo",
+    "loja": "amazon",
+    "link": "https://link.amazon/B0fLsozIT",
+    "imagem": "img/produtos/005.jpg",
+    "adicionado": "2026-09-28"
+  },
+  {
+    "id": 6,
+    "nome": "Tapete de pedra diatomita para banheiro",
+    "destaque": "Absorve a água dos pés e seca rápido, 60 x 39 cm",
+    "categoria": "Casa",
+    "loja": "amazon",
+    "link": "https://link.amazon/B0fg4CKHE",
+    "imagem": "img/produtos/006.jpg",
+    "adicionado": "2026-09-28"
+  },
+  {
+    "id": 7,
+    "nome": "Fonte de água para gatos em inox, 3 L",
+    "destaque": "Filtro de esponja e desligamento automático sem água",
+    "categoria": "Pet",
+    "loja": "amazon",
+    "link": "https://link.amazon/B05VzwoCi",
+    "imagem": "img/produtos/007.jpg",
+    "adicionado": "2026-09-28"
+  },
+  {
+    "id": 8,
+    "nome": "Lâmpada inteligente RGB Wi-Fi Elgin 10 W",
+    "destaque": "Muda de cor pelo celular e funciona com Alexa e Google Home",
+    "categoria": "Tecnologia",
+    "loja": "amazon",
+    "link": "https://link.amazon/B0dShd2Ck",
+    "imagem": "img/produtos/008.jpg",
+    "adicionado": "2026-09-28"
+  },
+  {
+    "id": 9,
+    "nome": "Kit com 12 potes herméticos Electrolux",
+    "destaque": "Vários tamanhos para legumes, grãos e massas",
+    "categoria": "Cozinha",
+    "loja": "amazon",
+    "link": "https://link.amazon/B0eyagr8u",
+    "imagem": "img/produtos/009.jpg",
+    "adicionado": "2026-09-28"
+  },
+  {
+    "id": 10,
+    "nome": "Pulverizador snow foam manual de 2 L",
+    "destaque": "Espuma densa para carro, moto e vidros, com bico ajustável",
+    "categoria": "Automotivo",
+    "loja": "amazon",
+    "link": "https://link.amazon/B028FMYf7",
+    "imagem": "img/produtos/010.jpg",
+    "adicionado": "2026-09-28"
   }
 ];
